@@ -5,6 +5,7 @@ import { PAGInit } from 'libpag';
 let PAG,
   pagView,
   url = './like.pag';
+// url = './page-00-00_bmp.pag';
 
 function App() {
   const doChange = useRef(false);
@@ -12,6 +13,11 @@ function App() {
   const handleChange = () => (doChange.current = true);
   const handleRepeat = () => {
     if (doChange.current) {
+      // if (url === './page-00-00_bmp.pag') {
+      //   url = './page-01-01_bmp.pag';
+      // } else {
+      //   url = './page-00-00_bmp.pag';
+      // }
       if (url === './like.pag') {
         url = './snowman.pag';
       } else {
